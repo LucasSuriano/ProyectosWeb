@@ -8,14 +8,18 @@ body {
 }
 
 #img{
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 450px;
     padding-bottom: 15px;
   }
 
+.search_input{
+    width: 250px;
+}
 
 .equipos_armados{
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 53px;
     color: snow;
     font-family: 'Bebas Neue', cursive; 
@@ -30,3 +34,28 @@ body {
     font-family: 'Bebas Neue', cursive; 
     font-size: 20px;
 }
+
+p{
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 30% 10px 30%;
+}
+
+
+hr {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 8px auto;
+    height: 0;
+    width:40%;
+    max-height: 0;
+    font-size: 1px;
+    box-shadow: 0px 0px 30px snow;
+    line-height: 0;
+    clear: both;
+    opacity: 90%;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid azure;
+ }
