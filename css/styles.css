@@ -1,0 +1,32 @@
+body {
+    background:url(../img/fondo.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    color: #fff;
+    background-position:center 0;
+    background-size: cover;
+}
+
+#img{
+    width: 250px;
+    height: 250px;
+    padding-bottom: 15px;
+  }
+
+
+.equipos_armados{
+    padding-top: 30px;
+    font-size: 53px;
+    color: snow;
+    font-family: 'Bebas Neue', cursive; 
+    text-align: center;
+}
+
+.btn_see_more{
+    text-align: center;
+}
+
+.btn_font{
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 20px;
+}
