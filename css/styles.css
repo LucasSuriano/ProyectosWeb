@@ -33,6 +33,7 @@ body {
 .btn_font{
     font-family: 'Bebas Neue', cursive; 
     font-size: 20px;
+    background-color: rgb(4, 94, 168);
 }
 
 p{
@@ -59,3 +60,29 @@ hr {
     border-top: 1px solid #aaaaaa;
     border-bottom: 1px solid azure;
  }
+.contacto{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 53px;
+    color: snow;
+    font-family: 'Bebas Neue', cursive; 
+    text-align: center;
+}
+
+.sobrenosotros{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 53px;
+    color: snow;
+    font-family: 'Bebas Neue', cursive; 
+    text-align: center;
+}
+
+.producto{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 53px;
+    color: snow;
+    font-family: 'Bebas Neue', cursive; 
+    text-align: center;
+}

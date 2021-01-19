@@ -18,27 +18,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 
-        <link rel="icon" type="image/png" href="img/favicon.ico"/>
-      <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-      <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-      <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-      <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-      <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-      <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="css/util.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-
     </head>
     
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">TEU</a>
+              <a class="navbar-brand" aria-current="page" href="index.html">TEU</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -48,13 +33,13 @@
                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
+                    <a class="nav-link" href="producto.html">Productos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Nosotros</a>
+                    <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
                   </li>
                 </ul>
                 <form class="d-flex">
@@ -64,79 +49,23 @@
               </div>
             </div>
           </nav>
-
-          <!-- <h1>Contactanos</h1> -->
-          
-          <div class="contact1">
-            <div class="container-contact1">
-              <div class="contact1-pic js-tilt" data-tilt>
-                <img src="img/img-01.png" alt="IMG">
-              </div>
-        
-              <form class="contact1-form validate-form">
-                <span class="contact1-form-title">
-                  CONTACTANOS
-                </span>
-                <hr id="contact_separator">
-        
-                <div class="wrap-input1 validate-input" data-validate = "Name is required">
-                  <input class="input1" type="text" name="name" placeholder="Name">
-                  <span class="shadow-input1"></span>
-                </div>
-        
-                <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                  <input class="input1" type="text" name="email" placeholder="Email">
-                  <span class="shadow-input1"></span>
-                </div>
-        
-                <div class="wrap-input1 validate-input" data-validate = "Subject is required">
-                  <input class="input1" type="text" name="subject" placeholder="Subject">
-                  <span class="shadow-input1"></span>
-                </div>
-        
-                <div class="wrap-input1 validate-input" data-validate = "Message is required">
-                  <textarea class="input1" name="message" placeholder="Message"></textarea>
-                  <span class="shadow-input1"></span>
-                </div>
-        
-                <div class="container-contact1-form-btn">
-                  <button class="contact1-form-btn">
-                    <span>
-                      Send Email
-                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    </span>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        
-        
-        
-        
-        <!--===============================================================================================-->
-          <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-        <!--===============================================================================================-->
-          <script src="vendor/bootstrap/js/popper.js"></script>
-          <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <!--===============================================================================================-->
-          <script src="vendor/select2/select2.min.js"></script>
-        <!--===============================================================================================-->
-          <script src="vendor/tilt/tilt.jquery.min.js"></script>
-          <script >
-            $('.js-tilt').tilt({
-              scale: 1.1
-            })
-          </script>
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-23581568-13');
-          </script>
-	        <script src="js/main.js"></script>
+          <h1 class= "contacto">CONTACTANOS</h1>
+          <hr>
+          <form action="Formulario.php" method="POST" enctype="multipart/form-data">
+            <label>Nombre: <input type="text" name="Nombre" required="" autofocus="" maxlength="50" placeholder="Juan Perez"></label>
+                <br>
+                <br>
+            <label>Email: <input type="email" name="Correo" required="" placeholder="juanperez@gmail.com"></label>
+                <br>
+                <br>
+            <label>Título: <input type="Titulo" name="Titulo" required="" placeholder="Título"></label>
+                <br>
+                <br>
+            <label>Mensaje: <input type="Mensaje" name="Mensaje" required="" placeholder="Mensaje..."></label>
+                <br>
+                <br>
+                <button type="button" class="btn btn-primary">Enviar Consulta...</button>
+          </form>
         </body>
     
 </html>
