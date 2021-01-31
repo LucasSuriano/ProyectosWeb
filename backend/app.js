@@ -1,12 +1,16 @@
 //Modulos
 const express = require('express');
-const app = express();
-const mysql = require('mysql');
-const bodyParser = require('body-parser');
+const app = express();                      //Framework de servidor
+const mysql = require('mysql');             //MySql
+const bodyParser = require('body-parser');  //Parsea los campos provenientes del front-end y los convierte en objetos
+const cors = require('cors');               //Permite uso de AJAX
+const nodemailer =('nodemailer');           //Permite el envio de mails
 
 
-require('dotenv/config');
+const configMensaje = require('rutas/configMensaje');
 
+
+require('dotenv/config');                   //Permite variables de ambiente
 
 //Variables del Ambiente
 const PUERTO = process.env.PORT || 3000;
@@ -14,7 +18,7 @@ const PUERTO = process.env.PORT || 3000;
 
 //Middlewares
 app.use(bodyParser.json());
-
+app.use(cors());
 
 //Rutas
 const api = process.env.API_URL || '/teuinformatica';
