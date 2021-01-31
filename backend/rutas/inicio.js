@@ -6,8 +6,12 @@ const path = require('path');
     res.render('index.html');
 })*/
 
-router.get('/home', function(req,res) {
+router.get('/index.html', function(req,res) {
     res.sendFile(path.join(__dirname, '../', '../', 'index.html'));
+})
+
+router.get('/contacto.html', function(req,res) {
+    res.sendFile(path.join(__dirname, '../', '../', 'contacto.html'));
 })
 
 module.exports = router;
